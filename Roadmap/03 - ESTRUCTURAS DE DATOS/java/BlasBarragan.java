@@ -84,7 +84,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
      * tipoDeDato[][] nombreArray = new tipoDeDato[tamañoArray/filas][tamañoArray2/columnas];
      */
 
-     public static void ArrayMultidimensional() {
+    public static void ArrayMultidimensional() {
         // Inserción
 
         int notasCurso[][] = new int [2][3];
@@ -104,7 +104,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
         };
 
         // Por lo demas, los arrays multidimensionales (matrices) se tratan igual que los array estaticos.
-     }
+    }
 
 /**
  * ArrayList (Arrays con vitaminas).
@@ -112,7 +112,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
  * Con esto, podremos crear y usar arrays con distintos metodos incluidos en Java que nos facilitaran trabajar con ellos.
  */ 
 
-     public static void ArrayConVitaminas() {
+    public static void ArrayConVitaminas() {
         // Inicializacion
         ArrayList<String> coches = new ArrayList<String>();
 
@@ -132,12 +132,12 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
         coches.remove(1);
             // Para vaciar el array
         coches.clear();
-     }
+    }
 
      // Existe una "Variante" de los ArrayList que se comporta igual pero trabaja en segundo plano de forma diferente.
      // Hablamos de las LinkedList que estan mas optimizadas para manipular datos al contrario que los Array que funcionan mejor para almacenarlos.
      // import java.util.LinkedList
-     public static void ListaParaManipularDatos(){
+    public static void ListaParaManipularDatos(){
         LinkedList<String> motos = new LinkedList<String>();
         motos.add("Honda");
         motos.add("Aprilia");
@@ -149,7 +149,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
         motos.removeLast(); // Elimina el dato en ultima posicion.
         motos.getFirst(); // Devuelve el dato en primera posicion.
         motos.getLast(); // Devuelve el dato en ultima posicion.
-     }
+    }
 
 /**
  * HashMap
@@ -157,7 +157,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
  * A difierencia de los arrays o las listas no se almacenan los datos ordenados. 
  * En su lugar, almacena parejas de datos en forma clave/valor para acceder a ellos.
  */
-     public static void AlmacenClaveValor() {
+    public static void AlmacenClaveValor() {
         // Inicializacion
         // Podemos emparejar datos de distinto tipo
         HashMap<String, String> PueblosDeEspaña = new HashMap<String, String>();
@@ -174,14 +174,14 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
         PueblosDeEspaña.remove("Castellon");
             // Para vaciar 
         PueblosDeEspaña.clear();
-     }
+    }
 
 /**
  * HashSet
  * import java.util.HashSet;
  * Coleccion de datos UNICOS. 
  */
-     public static void DatosUnicos() {
+    public static void DatosUnicos() {
         // Inicializacion
         HashSet<String> Marcas = new HashSet<String>();
 
@@ -194,7 +194,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
         Marcas.remove("Asus");
             // Para vaciar 
         Marcas.clear();
-     }
+    }
 
     public static void main(String[] args) {
         dificultadExtra();
@@ -246,7 +246,7 @@ private static HashMap<String, Integer> AgendaContactos = new HashMap<String, In
                     // Salir
                     break;
                 default:
-		            System.out.println("Opcion no valida");
+                    System.out.println("Opcion no valida");
             }
         } while (opcion !=5);
 		System.out.println("< ==== Salir ==== >");
